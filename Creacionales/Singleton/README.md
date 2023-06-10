@@ -1,18 +1,31 @@
-## Getting Started
+# Patrón Singleton
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+<aside>
+💡 Su objetivo es garantizar que una clase tenga una única instancia y proporcionar un punto global de acceso a ella.
 
-## Folder Structure
+</aside>
 
-The workspace contains two folders by default, where:
+<br>
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Aplicabilidad
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+El patrón Singleton es adecuado cuando:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- Se requiere tener una única instancia de una clase en todo el sistema.
+- Dicha instancia única necesita ser accesible de forma global en diferentes partes del código.
+- Es necesario controlar el acceso concurrente a la instancia única.
 
-## Dependency Management
+<br>
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Estructura
+
+El patrón Singleton generalmente se compone de los siguientes elementos:
+
+- **Singleton**: Es la clase que implementa el patrón. Tiene una variable estática privada que almacena la instancia única y un método estático para acceder a ella. La clase Singleton controla la creación de la instancia única y garantiza que solo haya una instancia en todo momento.
+
+<br>
+
+## Notas importantes
+
+- La implementación del Singleton debe tener en cuenta la concurrencia. Si múltiples hilos intentan acceder al Singleton al mismo tiempo, puede ocurrir una condición de carrera. Para abordar este problema, se pueden aplicar técnicas como la sincronización o el uso de inicialización perezosa con doble bloqueo.
+- Es importante tener en cuenta que el patrón Singleton puede introducir acoplamiento en el código y dificultar las pruebas unitarias. Por lo tanto, se recomienda utilizarlo cuando realmente sea necesario y se justifique su uso.

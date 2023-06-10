@@ -1,8 +1,11 @@
 public class MySingleton {
-    String x;
+    // Atributo cualquiera
+    private String x;
 
+    // Instancia unica
     private static MySingleton mySingleton = null;
 
+    // Constructor privado
     private MySingleton(String x) {
         this.x = x;
     }
@@ -12,6 +15,7 @@ public class MySingleton {
             mySingleton = new MySingleton(x);
         }else{
             System.out.println("Ya existe una instancia de MySingleton");
+            mySingleton.setX(x);
         }
         return mySingleton;
     }
