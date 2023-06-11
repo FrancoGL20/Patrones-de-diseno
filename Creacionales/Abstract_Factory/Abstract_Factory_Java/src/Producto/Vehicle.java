@@ -1,3 +1,5 @@
+package Producto;
+
 // Producto
 public interface Vehicle {
     public abstract int getWheels();

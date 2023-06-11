@@ -1,9 +1,13 @@
+package Producto_concreto;
 // Producto Concreto
-public class SportMotorbike implements Motorbike {
+
+import Producto_especifico.Motorbike;
+
+public class CruiseMotorbike implements Motorbike {
 
     @Override
     public String getType() {
-        return "Sport!";
+        return "Cruise!";
     }
 
     @Override
@@ -13,6 +17,6 @@ public class SportMotorbike implements Motorbike {
 
     @Override
     public int getSeats() {
-        return 1;
+        return 2;
     }
 }
