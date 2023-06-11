@@ -5,6 +5,7 @@ import Producto.Vehicle;
 import Producto_concreto.CruiseMotorbike;
 import Producto_concreto.SportMotorbike;
 
+// Fabrica Concreta
 public class MotorbikeFactory extends VehicleAbstractFactory {
     public final int SPORT = 1;
     public final int CRUISE = 2;

@@ -5,6 +5,7 @@ import Producto.Vehicle;
 import Producto_concreto.FamilyCar;
 import Producto_concreto.LuxuryCar;
 
+// Fabrica Concreta
 public class CarFactory extends VehicleAbstractFactory {
     public final int LUXURY = 1;
     public final int FAMILY = 2;

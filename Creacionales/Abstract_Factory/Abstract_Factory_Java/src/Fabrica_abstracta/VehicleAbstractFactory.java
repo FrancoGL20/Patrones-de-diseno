@@ -4,6 +4,7 @@ import Fabricas_concretas.CarFactory;
 import Fabricas_concretas.MotorbikeFactory;
 import Producto.Vehicle;
 
+// Fabrica Abstracta
 public abstract class VehicleAbstractFactory {
     public static final int CarFactory = 1;
     public static final int MotorbikeFactory = 2;
