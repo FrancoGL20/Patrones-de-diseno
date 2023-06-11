@@ -11,7 +11,7 @@ Esto permite que una clase delegue la creación de objetos a sus subclases.
 
 ### Ejemplo básico de Patrón
 
-- En un ORM de algún framework como [**Laravel 9**](https://www.notion.so/Laravel-9-b0ff27d310994c22939155fc8020230a?pvs=21) se escribe únicamente en el archivo de configuración el nombre de la base de datos y las credenciales, lo que hacen internamente es:
+- En un ORM de algún framework como Laravel se escribe únicamente en el archivo de configuración el nombre de la base de datos y las credenciales, lo que hacen internamente es:
     1. recibir el tipo de base de datos que se usa (pe: MySQL, PostgreSQL, etc.)
     2. Mediante una fabrica consultan el controlador correcto y utilizan las credenciales para hacer la conexión con el controlador correcto y las credenciales correctas
 
