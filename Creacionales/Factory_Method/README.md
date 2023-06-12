@@ -1,4 +1,4 @@
-# Patrón Factory
+# Patrón Factory Method
 
 <aside>
 💡 El patrón Factory Method es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase, pero permite a las subclases decidir qué clase concreta instanciar. 
