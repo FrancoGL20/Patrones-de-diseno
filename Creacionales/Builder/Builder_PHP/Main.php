@@ -189,6 +189,8 @@ function clientCode(SQLQueryBuilder $queryBuilder) // dentro del patrón builder
     // ...
 }
 
+
+
 //* La aplicación debería en la vida real seleccionar el tipo de constructor de consulta adecuado según una configuración actual o la configuración del entorno, por ejemplo:
 // if ($_ENV['database_type'] == 'postgres') {
 //     $builder = new PostgresQueryBuilder(); } else {
